@@ -1,0 +1,61 @@
+:root {
+  --radius: 8px;
+}
+
+body {
+  font-family: sans-serif;
+  background: #e3e5e8;
+}
+
+main {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  min-height: 100dvh;
+}
+
+.panel {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  grid-row: span 2;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.sidebar li {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+
+header,
+article {
+  grid-column: span 3;
+}

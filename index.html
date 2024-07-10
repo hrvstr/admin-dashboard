@@ -4,7 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0ddc2f4547.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <aside class="sidebar panel">
+        <h2 class="logo">Dashboard</h2>
+        <ul class="main-nav">
+          <li><i class="fa-solid fa-fw fa-house"></i>Home</li>
+          <li><i class="fa-solid fa-fw fa-user"></i>Profile</li>
+          <li><i class="fa-solid fa-fw fa-message"></i>Messages</li>
+          <li><i class="fa-solid fa-fw fa-clock-rotate-left"></i>History</li>
+          <li><i class="fa-solid fa-fw fa-list-check"></i>Tasks</li>
+          <li><i class="fa-solid fa-fw fa-user-group"></i>Communities</li>
+        </ul>
+        <ul class="misc-nav">
+          <li><i class="fa-solid fa-fw fa-gear"></i>Settings</li>
+          <li><i class="fa-solid fa-fw fa-question"></i>Support</li>
+          <li><i class="fa-solid fa-fw fa-shield-halved"></i>Privacy</li>
+        </ul>
+      </aside>
+      <header class="panel">
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search" />
+      </header>
+      <article class="panel">
+        <h2>Your Projects</h2>
+      </article>
+    </main>
+  </body>
 </html>
