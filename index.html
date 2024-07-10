@@ -12,26 +12,41 @@
     ></script>
   </head>
   <body>
+    <aside class="sidebar panel">
+      <h2 class="logo">Dashboard</h2>
+      <ul class="main-nav">
+        <li><i class="fa-solid fa-fw fa-house"></i>Home</li>
+        <li><i class="fa-solid fa-fw fa-user"></i>Profile</li>
+        <li><i class="fa-solid fa-fw fa-message"></i>Messages</li>
+        <li><i class="fa-solid fa-fw fa-clock-rotate-left"></i>History</li>
+        <li><i class="fa-solid fa-fw fa-list-check"></i>Tasks</li>
+        <li><i class="fa-solid fa-fw fa-user-group"></i>Communities</li>
+      </ul>
+      <ul class="misc-nav">
+        <li><i class="fa-solid fa-fw fa-gear"></i>Settings</li>
+        <li><i class="fa-solid fa-fw fa-question"></i>Support</li>
+        <li><i class="fa-solid fa-fw fa-shield-halved"></i>Privacy</li>
+      </ul>
+    </aside>
     <main>
-      <aside class="sidebar panel">
-        <h2 class="logo">Dashboard</h2>
-        <ul class="main-nav">
-          <li><i class="fa-solid fa-fw fa-house"></i>Home</li>
-          <li><i class="fa-solid fa-fw fa-user"></i>Profile</li>
-          <li><i class="fa-solid fa-fw fa-message"></i>Messages</li>
-          <li><i class="fa-solid fa-fw fa-clock-rotate-left"></i>History</li>
-          <li><i class="fa-solid fa-fw fa-list-check"></i>Tasks</li>
-          <li><i class="fa-solid fa-fw fa-user-group"></i>Communities</li>
-        </ul>
-        <ul class="misc-nav">
-          <li><i class="fa-solid fa-fw fa-gear"></i>Settings</li>
-          <li><i class="fa-solid fa-fw fa-question"></i>Support</li>
-          <li><i class="fa-solid fa-fw fa-shield-halved"></i>Privacy</li>
-        </ul>
-      </aside>
       <header class="panel">
-        <label for="search">Search</label>
-        <input type="search" name="search" id="search" />
+        <form class="search-bar">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            aria-label="Search"
+            placeholder="Search"
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+          </button>
+        </form>
+        <button class="button"><i class="fa-solid fa-plus"></i> Create</button>
+        <div class="avatar">
+          <i class="fa-solid fa-user"></i><span>John Doe</span>
+          <span class="indicator">3</span>
+        </div>
       </header>
       <article class="panel">
         <h2>Your Projects</h2>
