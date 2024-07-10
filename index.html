@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/0ddc2f4547.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
+    <!-- Sidebar -->
     <aside class="sidebar panel">
-      <h2 class="logo">Dashboard</h2>
-      <ul class="main-nav">
-        <li><i class="fa-solid fa-fw fa-house"></i>Home</li>
-        <li><i class="fa-solid fa-fw fa-user"></i>Profile</li>
-        <li><i class="fa-solid fa-fw fa-message"></i>Messages</li>
-        <li><i class="fa-solid fa-fw fa-clock-rotate-left"></i>History</li>
-        <li><i class="fa-solid fa-fw fa-list-check"></i>Tasks</li>
-        <li><i class="fa-solid fa-fw fa-user-group"></i>Communities</li>
-      </ul>
-      <ul class="misc-nav">
-        <li><i class="fa-solid fa-fw fa-gear"></i>Settings</li>
-        <li><i class="fa-solid fa-fw fa-question"></i>Support</li>
-        <li><i class="fa-solid fa-fw fa-shield-halved"></i>Privacy</li>
-      </ul>
+      <div class="logo">
+        <div class="icon-wrapper"><i class="ti ti-layout-dashboard"></i></div>
+        <span>Dashboard</span>
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li class="active"><i class="ti ti-home"></i>Home</li>
+          <li><i class="ti ti-user"></i>Profile</li>
+          <li><i class="ti ti-message"></i>Messages</li>
+          <li><i class="ti ti-history"></i>History</li>
+          <li><i class="ti ti-list-check"></i>Tasks</li>
+          <li><i class="ti ti-users"></i>Communities</li>
+        </ul>
+        <ul class="misc-nav">
+          <li><i class="ti ti-settings"></i>Settings</li>
+          <li><i class="ti ti-help-hexagon"></i>Support</li>
+          <li><i class="ti ti-shield"></i>Privacy</li>
+        </ul>
+      </nav>
     </aside>
     <main>
       <header class="panel">
+        <!-- <h2>Projects</h2> -->
+        <!-- Search -->
         <form class="search-bar">
           <input
             type="search"
@@ -39,17 +50,122 @@
             placeholder="Search"
           />
           <button type="submit">
-            <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+            <i class="ti ti-search" aria-label="Search"></i>
           </button>
         </form>
-        <button class="button"><i class="fa-solid fa-plus"></i> Create</button>
-        <div class="avatar">
-          <i class="fa-solid fa-user"></i><span>John Doe</span>
-          <span class="indicator">3</span>
+        <div class="actions">
+          <button class="button create-button">
+            <i class="ti ti-plus"></i> Create
+          </button>
+          <div class="action">
+            <i class="ti ti-bell" aria-label="Search"></i>
+            <span class="indicator">2</span>
+          </div>
+          <div class="action">
+            <i class="ti ti-message" aria-label="Search"></i>
+            <span class="indicator">5</span>
+          </div>
+          <div class="avatar">
+            <img src="avatar.jpg" class="avatar" alt="" />
+          </div>
         </div>
       </header>
-      <article class="panel">
-        <h2>Your Projects</h2>
+      <article>
+        <ul class="projects">
+          <li class="panel">
+            <img src="https://picsum.photos/seed/1/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex reprehenderit aliquip proident veniam
+              mollit quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/seed/2/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam qui reprehenderit aliquip proident veniam mollit
+              quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/seed/3/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/seed/4/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex reprehenderit aliquip proident veniam
+              mollit quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/seed/5/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam qui reprehenderit aliquip proident veniam mollit
+              quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/seed/6/290/200" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/290/200?random=7" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex reprehenderit aliquip proident veniam
+              mollit quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/290/200?random=8" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam qui reprehenderit aliquip proident veniam mollit
+              quis ad amet.
+            </p>
+          </li>
+          <li class="panel">
+            <img src="https://picsum.photos/290/200?random=9" alt="" />
+            <h3>Super Cool Project</h3>
+            <p>
+              Consequat velit voluptate tempor Lorem veniam excepteur cillum
+              consectetur cillum ea. Adipisicing fugiat aute consectetur. Et
+              incididunt aliqua nostrud ex. Commodo labore reprehenderit do
+              aliquip veniam.
+            </p>
+          </li>
+        </ul>
       </article>
     </main>
   </body>
